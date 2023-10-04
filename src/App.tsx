@@ -1,9 +1,14 @@
-import { BrowserRouter, useRoutes } from "react-router-dom";
+import { useRoutes } from "react-router-dom";
+import { routes } from "./routes"
 
 
 
 
 
-const App = () => <div>앱입니다</div>
+const App = () => {
 
+  const elem = useRoutes(routes)
+  return elem
+{/* <div>앱입니다</div> */}
+}
 export default App
