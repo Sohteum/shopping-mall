@@ -1,20 +1,20 @@
-import * as React from "react";
-import { createRoot } from "react-dom/client";
+import React from "react";
+import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
-import './pages/index.tsx'
 
+import App from "./App";
 
-
-// ReactDOM.createRoot(document.getElementById('root')!).render(
-//     <BrowserRouter>
-//     <App />
-//     </BrowserRouter>
-// )
-
-const root = createRoot(document.getElementById("root"));
-
-root.render(
+ReactDOM.render(
   <BrowserRouter>
-    {/* The rest of your app goes here */}
-  </BrowserRouter>
-);
+    <App />
+  </BrowserRouter>,
+  document.getElementById('root'),
+)
+
+// const root = createRoot(document.getElementById("root"));
+
+// root.render(
+//   <BrowserRouter>
+//     {/* The rest of your app goes here */}
+//   </BrowserRouter>
+// );
